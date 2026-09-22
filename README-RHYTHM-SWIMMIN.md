@@ -6,7 +6,7 @@ Deployment: GitHub Pages, `main` branch, repository root. No build step.
 ## Edit and preview
 
 - `index.html`: copy, real platform destinations, semantic page structure.
-- `site/style.css`: responsive layout and original CSS device frames.
+- `site/style.css`: responsive layout and original CSS iPhone-style home-screen illustration.
 - `site/motion.js`: optional one-time device entrance, respects reduced motion.
 - `site/`: optimized real gameplay, approved icon, social image and local fonts.
 - `CNAME`, `robots.txt`, `sitemap.xml`: production domain and discovery.
@@ -20,7 +20,7 @@ Historical Shopify files remain in the repository for preservation; this page do
 Browser beta is live: https://theriskr.itch.io/rhythm-swimmin
 Follow development: https://theriskr.itch.io
 Steam and iPhone are planned; Android is under consideration. No release date is promised.
-Device illustrations contain browser beta screenshots, not a claim of a native iOS release.
+The home-screen concept shows the approved icon and is labelled as a planned iPhone app, not an available release.
 
 When available, replace the Steam status with a genuine Steam wishlist link, and the iPhone status with a public TestFlight invitation. TestFlight external invitations require an approved beta build: https://developer.apple.com/help/app-store-connect/test-a-beta-version/invite-external-testers
 App Store pre-order is a later release step, not a substitute for TestFlight.
@@ -37,7 +37,7 @@ Copied from the existing Rhythm Swimmin’ project without changing its files:
 Screenshots are compressed/resized only; no generated gameplay or composited HUD.
 - Barlow fonts: public/fonts, licence in site/fonts/OFL.txt.
 - Social share card: original typesetting using approved icon and Barlow.
-- Phones: original CSS illustrations, no third-party device asset or Apple badge.
+- Phone: original CSS illustration, no third-party device asset or Apple badge.
 
 ## DNS / TLS
 

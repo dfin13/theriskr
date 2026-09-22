@@ -48,6 +48,51 @@ beneath it. Do **not** let the generator render the text.
 
 ---
 
+---
+
+## 3. Dive key art — `site/teaser-dive-2.jpg`
+
+**Target:** 1000 × 1200 px, JPEG q80, under ~150 KB.
+
+**Prompt**
+
+> A vertical teaser image for a diving game. Looking straight down into deep,
+> dark competition-pool water at night from a springboard's edge. Near-black
+> navy at the base, a single soft cyan light bloom rippling across the surface,
+> faint caustic light lines. No diver, no figure, no people, no lane ropes. No
+> text, no logo, no watermark. Abstract, quiet, cinematic — restrained and
+> premium. Colour palette: #04141F, #55D0FF highlights only, #EAF6FF for the
+> faintest surface glints.
+
+**CSS fallback already shipping:** `site/style.css`, `.slot--dive .slot-art`
+uses `site/teaser-dive.jpg` (an existing rough mockup) with a dark gradient
+overlay. To swap in proper key art, replace that file (or update the `url(...)`
+path) — no other change needed.
+
+---
+
+## 4. MMA key art — `site/teaser-mma.jpg`
+
+**Target:** 1000 × 1200 px, JPEG q80, under ~150 KB.
+
+**Prompt**
+
+> A vertical teaser image for a fighting game. An octagonal cage geometry seen
+> from a low angle, rendered as sparse glowing wireframe lines against a
+> near-black background — no fighters, no figures, no people, no ring canvas
+> detail. A faint circular timing/clock motif overlaid at the centre, as if
+> counting a round. No text, no logo, no watermark. Abstract, minimal,
+> geometric, tense but quiet. Colour palette: #04141F background, #55D0FF
+> wireframe and glow, #EAF6FF for the faintest highlights only.
+
+**CSS fallback already shipping:** `site/style.css`, `.slot--mma .slot-art`
+is a hand-built inline SVG (octagon outline + dashed timing ring). To swap in
+proper key art, give `.slot--mma .slot-art` a `background:url('teaser-mma.jpg')
+center/cover no-repeat` rule above the SVG, or remove the SVG markup from
+`index.html` and treat it the same as the Dive slot.
+
+---
+
 ## Rules
 
 - Do not generate app icons, UI, screenshots or logos — those are real assets and

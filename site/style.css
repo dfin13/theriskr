@@ -270,10 +270,22 @@ h3{font-size:clamp(22px,2vw,30px);letter-spacing:-.01em}
 .next-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(24px,5vw,72px);align-items:end}
 .next-grid .body{margin-top:0}
 .next-slots{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1px;margin-top:clamp(40px,5vw,64px);background:var(--line-2);border:1px solid var(--line-2)}
-.slot{background:var(--bg);min-height:clamp(140px,16vw,210px);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
-.slot::before{content:"";position:absolute;inset:0;
+.slot{background:var(--bg);min-height:clamp(220px,26vw,300px);display:flex;flex-direction:column;justify-content:flex-end;position:relative;overflow:hidden;text-align:left}
+.slot::before{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;
   background:repeating-linear-gradient(135deg,rgba(255,255,255,.028) 0 1px,transparent 1px 11px)}
-.slot b{position:relative;font-family:Barlow,var(--sans);font-weight:700;font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--faint)}
+.slot-art{position:absolute;inset:0;z-index:0}
+.slot--dive .slot-art{background:url('teaser-dive.jpg') center 22%/cover no-repeat}
+.slot--dive .slot-art::after{content:"";position:absolute;inset:0;
+  background:linear-gradient(180deg,rgba(5,11,16,.15) 0%,rgba(5,11,16,.55) 55%,var(--bg) 100%)}
+.slot--mma .slot-art{display:flex;align-items:center;justify-content:center;opacity:.5}
+.slot--mma .slot-art svg{width:62%;height:62%;max-width:220px}
+.slot--mma .slot-art svg polygon{fill:none;stroke:var(--line-2);stroke-width:1.5}
+.slot--mma .slot-art svg circle{fill:none;stroke:rgba(92,211,255,.22);stroke-width:1;stroke-dasharray:3 5}
+.slot--mma .slot-art svg line{stroke:var(--faint);stroke-width:1}
+.slot-body{position:relative;z-index:2;padding:clamp(18px,2.4vw,28px)}
+.slot-tag{display:block;font-family:Barlow,var(--sans);font-weight:700;font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--faint)}
+.slot-name{margin:10px 0 0;font-family:Barlow,var(--sans);font-weight:700;font-size:clamp(22px,2.6vw,30px);letter-spacing:.01em;color:var(--ink)}
+.slot-desc{margin:8px 0 0;max-width:34ch;color:var(--muted);font-size:13px;line-height:1.6}
 
 /* ---------- closer extras ---------- */
 .closer .index{margin-bottom:18px}

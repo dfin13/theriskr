@@ -27,6 +27,7 @@
 <link rel="stylesheet" href="/site/style.css">
 <script>document.documentElement.classList.add('js')</script>
 <script src="/site/motion.js" defer></script>
+<script src="/site/vote.js" defer></script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -214,6 +215,15 @@
             <b class="slot-tag">In development</b>
             <h3 class="slot-name">Dive</h3>
             <p class="slot-desc">From the same pool. The board, the drop, the hold, the entry — timing carried to a different edge of the water.</p>
+            <span class="vote" data-vote="dive">
+              <button type="button" class="vote-btn" data-vote-btn aria-pressed="false">
+                <span class="vote-btn-label">Vote Dive</span>
+              </button>
+              <span class="vote-result" data-vote-result hidden>
+                <span class="vote-bar" aria-hidden="true"><span class="vote-bar-fill" data-vote-fill></span></span>
+                <span class="vote-stat"><span data-vote-pct>0%</span> · <span data-vote-total>0 votes</span></span>
+              </span>
+            </span>
           </span>
         </article>
         <article class="slot slot--mma">
@@ -231,6 +241,15 @@
             <b class="slot-tag">In development</b>
             <h3 class="slot-name">MMA</h3>
             <p class="slot-desc">Different sport. Same idea: timing decides it.</p>
+            <span class="vote" data-vote="mma">
+              <button type="button" class="vote-btn" data-vote-btn aria-pressed="false">
+                <span class="vote-btn-label">Vote MMA</span>
+              </button>
+              <span class="vote-result" data-vote-result hidden>
+                <span class="vote-bar" aria-hidden="true"><span class="vote-bar-fill" data-vote-fill></span></span>
+                <span class="vote-stat"><span data-vote-pct>0%</span> · <span data-vote-total>0 votes</span></span>
+              </span>
+            </span>
           </span>
         </article>
       </div>

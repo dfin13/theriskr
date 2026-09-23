@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Privacy Policy — THERISKR</title>
+<meta name="description" content="What THERISKR and Rhythm Swimmin' actually collect and why.">
+<meta name="theme-color" content="#F4F1EA">
+<link rel="canonical" href="https://theriskr.com/privacy.html">
+<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="preload" href="/site/fonts/inter-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/site/fonts/inter-500.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/site/fonts/inter-600.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/site/style.css">
+<script>document.documentElement.classList.add('js')</script>
+<style>
+.legal{max-width:720px;margin:0 auto;padding:var(--s-7) 20px 120px}
+.legal h1{font-family:var(--display);font-weight:600;letter-spacing:-.028em;font-size:var(--t-8,44px);margin:0 0 8px}
+.legal .updated{font-family:var(--sans);font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:var(--faint);margin:0 0 48px}
+.legal h2{font-family:var(--sans);font-weight:600;font-size:19px;letter-spacing:-.01em;margin:40px 0 12px}
+.legal p,.legal li{font-family:var(--sans);font-size:16px;line-height:1.62;color:var(--body)}
+.legal ul{margin:0 0 16px;padding-left:20px}
+.legal li{margin-bottom:8px}
+.legal a{color:var(--ink)}
+.legal strong{color:var(--ink)}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-head">
+  <div class="wrap head-row">
+    <a class="brand" href="/" aria-label="THERISKR — home">
+      <span class="brand-mark" aria-hidden="true"></span>
+      <span class="brand-name">THERISKR</span>
+    </a>
+    <nav aria-label="Main">
+      <a href="/#studio">Studio</a>
+      <a href="/#title">Debut title</a>
+      <a href="/#next">What's next</a>
+      <a class="head-cta" href="https://theriskr.itch.io/rhythm-swimmin">Play the beta</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main" tabindex="-1">
+<div class="legal">
+<h1>Privacy Policy</h1>
+<p class="updated">Last updated September 23, 2026</p>
+
+<p>THERISKR makes Rhythm Swimmin', currently in browser beta. This page explains what we collect when you play or visit theriskr.com, and why. We keep this list short on purpose: if it isn't here, we don't collect it.</p>
+
+<h2>The short version</h2>
+<p>Playing Rhythm Swimmin' doesn't require an account. You get a random device ID and can play, save progress, and race under a claimed display name without ever giving us your email. If you choose to sign in with Google, we store your Google account ID and email so you can keep your progress across devices. We never store your raw IP address — only a one-way hash of it, used briefly to slow down abuse. We don't run any third-party analytics or advertising trackers.</p>
+
+<h2>What we store when you play</h2>
+<ul>
+<li><strong>A random client ID.</strong> A 24-character ID generated on your device and kept in your browser's localStorage. This is how the server recognizes you without an account.</li>
+<li><strong>A claimed display name.</strong> The name you pick, tied to your client ID, so it can't be taken by someone else while you hold it.</li>
+<li><strong>Race results.</strong> Your event, physics version, finish time, and the replay data ("tape") the server uses to verify that time — we never trust a time your device reports without replaying it server-side.</li>
+<li><strong>Career stats.</strong> Strength, technique, endurance, and similar training attributes tied to your client ID.</li>
+<li><strong>Affiliation.</strong> The team or nation badge you swim under, if you pick one, shown on world-board rows.</li>
+<li><strong>Friends list.</strong> The display names you've added as friends, tied to your client ID (never the reverse).</li>
+<li><strong>Feedback you submit.</strong> The category and text of beta feedback posts, and votes on other players' posts, tied to your client ID.</li>
+<li><strong>A hashed IP address, briefly.</strong> When you submit a vote on our "what's next" poll or certain rate-limited actions, we hash your IP address (a one-way transformation — the original address is not recoverable or stored) to damp abuse from a single address. We never store your actual IP.</li>
+</ul>
+<p>Guest ("Walk-On") play works entirely off the client ID above. Guest times are never posted to public or world leaderboards — only claimed names can appear on public boards.</p>
+
+<h2>If you sign in with Google</h2>
+<p>Signing in is optional and only changes what's linked to your account:</p>
+<ul>
+<li><strong>Your Google account ID</strong> (a stable identifier Google calls "sub"), so your account survives even if you change your Gmail address.</li>
+<li><strong>Your email address</strong>, stored for display and account recovery only — never sold, never emailed to marketers.</li>
+<li><strong>Session and refresh tokens.</strong> We store a hash of your refresh token, not the token itself, along with when a session was created, last used, and its expiry, so we can keep you signed in and let you sign out remotely.</li>
+</ul>
+<p>We request only the minimum Google OAuth scopes needed to identify you (your Google account ID and email) — we do not request access to your Gmail, Drive, Contacts, or any other Google data.</p>
+
+<h2>Your browser's local storage</h2>
+<p>Separately from anything sent to our server, your browser stores some things locally, on your device only:</p>
+<ul>
+<li>Local game saves and progress, so you don't lose a run on reload.</li>
+<li>Whether you're playing as a guest ("Walk-On").</li>
+<li>Your vote ID for the site's "what's next" poll.</li>
+<li>Marketing attribution (which link brought you here, e.g. a UTM tag), used only to understand which of our own posts are working.</li>
+</ul>
+<p>None of this local storage is shared with us unless the relevant feature (like submitting a run or a vote) explicitly sends it.</p>
+
+<h2>Analytics and tracking</h2>
+<p>We do not currently run any third-party analytics, advertising, or tracking service — no Google Analytics, no Meta Pixel, no ad networks. The site's marketing code dispatches a local browser event when you interact with certain buttons, but nothing is sent anywhere; no analytics provider is connected today. If that changes, we'll update this page first.</p>
+
+<h2>Cookies</h2>
+<p>We don't use tracking cookies. Sign-in relies on tokens held in your browser, not third-party cookies.</p>
+
+<h2>How long we keep data</h2>
+<p>Game and account data is kept for as long as your account or client ID is active. This is a beta: we may reset leaderboards, career progress, or accounts during development, and a full data wipe has already happened once during the beta. Refresh tokens expire automatically (currently 60 days) and are rotated on use.</p>
+
+<h2>Sharing</h2>
+<p>We don't sell your data. We don't share it with third parties except infrastructure providers that run our servers and database (currently Cloudflare), who process it only to run the service.</p>
+
+<h2>Your choices</h2>
+<p>You can play entirely as a guest and never create an account. You can stop playing and clear your browser's local storage at any time. If you signed in with Google and want your account or its data removed, email us and we'll take care of it.</p>
+
+<h2>Children</h2>
+<p>Rhythm Swimmin' is intended for players 13 and older. We don't knowingly collect data from children under 13.</p>
+
+<h2>Changes</h2>
+<p>We may update this policy as the game develops. We'll update the date at the top when we do.</p>
+
+<h2>Contact</h2>
+<p>Questions about this policy or your data: <a href="mailto:davidbaxfinney@gmail.com">davidbaxfinney@gmail.com</a></p>
+</div>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap foot-row">
+    <span class="foot-name">THERISKR</span>
+    <span class="foot-tag">Games about timing.</span>
+    <a href="/privacy.html">Privacy</a>
+    <a href="/terms.html">Terms</a>
+    <a href="https://theriskr.itch.io">itch.io<span aria-hidden="true"> →</span></a>
+  </div>
+</footer>
+
+</body>
+</html>

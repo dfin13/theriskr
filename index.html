@@ -115,11 +115,23 @@
           <p class="body">Everything ships playable first and gets sharpened in the open, with the people playing it.</p>
         </div>
       </div>
-      <ul class="tenets" data-reveal>
-        <li><span class="tenet-no">I</span><h3>Precision over noise</h3><p>One mechanic, understood completely, beats five that nearly work.</p></li>
-        <li><span class="tenet-no">II</span><h3>Readable in a second</h3><p>If the screen can’t tell you what went wrong, the design isn’t done.</p></li>
-        <li><span class="tenet-no">III</span><h3>Built in public</h3><p>Betas go out early. The changelog is the roadmap.</p></li>
-      </ul>
+      <ol class="tenets" data-reveal>
+        <li>
+          <span class="tenet-no">01</span>
+          <h3>Precision over noise</h3>
+          <p>One mechanic, understood completely, beats five that nearly work.</p>
+        </li>
+        <li>
+          <span class="tenet-no">02</span>
+          <h3>Readable in a second</h3>
+          <p>If the screen can’t tell you what went wrong, the design isn’t done.</p>
+        </li>
+        <li>
+          <span class="tenet-no">03</span>
+          <h3>Built in public</h3>
+          <p>Betas go out early. The changelog is the roadmap.</p>
+        </li>
+      </ol>
     </div>
   </section>
 
@@ -133,11 +145,80 @@
         <p class="body">You race the field and you race the tenths. The pool does not care how hard you try — only whether you arrived on the beat.</p>
       </div>
 
-      <div class="lane-figure" data-reveal aria-hidden="true">
-        <span class="lane"></span><span class="lane"></span><span class="lane"></span><span class="lane"></span>
-        <ul class="ticks"><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li></ul>
-        <span class="marker marker-a"></span><span class="marker marker-b"></span>
-      </div>
+      <figure class="lane-figure" data-reveal>
+        <svg class="lane-svg" viewBox="0 0 1200 268" role="img" aria-labelledby="lanefig-t lanefig-d" focusable="false">
+          <title id="lanefig-t">Eight lanes, one finish, decided in hundredths</title>
+          <desc id="lanefig-d">A diagram of an eight-lane pool seen from above. The fifteen-metre flags are marked at each end and the touch pad at the finish. Lane four is marked out in evenly spaced stroke beats and touches 0.23 seconds ahead of lane five.</desc>
+
+          <rect class="lf-hot" x="72" y="102" width="1056" height="22"/>
+
+          <g class="lf-ropes">
+            <line class="lf-rope" x1="72" y1="36" x2="1128" y2="36"/>
+            <line class="lf-rope" x1="72" y1="58" x2="1128" y2="58"/>
+            <line class="lf-rope" x1="72" y1="80" x2="1128" y2="80"/>
+            <line class="lf-rope" x1="72" y1="102" x2="1128" y2="102"/>
+            <line class="lf-rope" x1="72" y1="124" x2="1128" y2="124"/>
+            <line class="lf-rope" x1="72" y1="146" x2="1128" y2="146"/>
+            <line class="lf-rope" x1="72" y1="168" x2="1128" y2="168"/>
+            <line class="lf-rope" x1="72" y1="190" x2="1128" y2="190"/>
+            <line class="lf-rope" x1="72" y1="212" x2="1128" y2="212"/>
+          </g>
+          <g class="lf-nums">
+            <text class="lf-num" x="58" y="51" text-anchor="end">1</text>
+            <text class="lf-num" x="58" y="73" text-anchor="end">2</text>
+            <text class="lf-num" x="58" y="95" text-anchor="end">3</text>
+            <text class="lf-num" x="58" y="117" text-anchor="end">4</text>
+            <text class="lf-num" x="58" y="139" text-anchor="end">5</text>
+            <text class="lf-num" x="58" y="161" text-anchor="end">6</text>
+            <text class="lf-num" x="58" y="183" text-anchor="end">7</text>
+            <text class="lf-num" x="58" y="205" text-anchor="end">8</text>
+          </g>
+
+          <line class="lf-wall" x1="72" y1="30" x2="72" y2="218"/>
+          <line class="lf-pad" x1="1128" y1="30" x2="1128" y2="218"/>
+
+          <line class="lf-flag" x1="389" y1="30" x2="389" y2="218"/>
+          <line class="lf-flag" x1="811" y1="30" x2="811" y2="218"/>
+
+          <g class="lf-beats">
+            <line class="lf-beat" x1="128" y1="107" x2="128" y2="119"/>
+            <line class="lf-beat" x1="182" y1="107" x2="182" y2="119"/>
+            <line class="lf-beat" x1="236" y1="107" x2="236" y2="119"/>
+            <line class="lf-beat" x1="290" y1="107" x2="290" y2="119"/>
+            <line class="lf-beat" x1="344" y1="107" x2="344" y2="119"/>
+            <line class="lf-beat" x1="398" y1="107" x2="398" y2="119"/>
+            <line class="lf-beat" x1="452" y1="107" x2="452" y2="119"/>
+            <line class="lf-beat" x1="506" y1="107" x2="506" y2="119"/>
+            <line class="lf-beat" x1="560" y1="107" x2="560" y2="119"/>
+            <line class="lf-beat" x1="614" y1="107" x2="614" y2="119"/>
+            <line class="lf-beat" x1="668" y1="107" x2="668" y2="119"/>
+            <line class="lf-beat" x1="722" y1="107" x2="722" y2="119"/>
+            <line class="lf-beat" x1="776" y1="107" x2="776" y2="119"/>
+            <line class="lf-beat" x1="830" y1="107" x2="830" y2="119"/>
+            <line class="lf-beat" x1="884" y1="107" x2="884" y2="119"/>
+            <line class="lf-beat" x1="938" y1="107" x2="938" y2="119"/>
+            <line class="lf-beat" x1="992" y1="107" x2="992" y2="119"/>
+          </g>
+
+          <line class="lf-trail" x1="1010" y1="113" x2="1124" y2="113"/>
+          <line class="lf-trail lf-trail-b" x1="986" y1="135" x2="1100" y2="135"/>
+          <circle class="lf-dot" cx="1126" cy="113" r="5"/>
+          <circle class="lf-dot lf-dot-b" cx="1102" cy="135" r="4"/>
+
+          <g class="lf-call">
+            <line x1="1126" y1="106" x2="1126" y2="20"/>
+            <line x1="1102" y1="128" x2="1102" y2="20"/>
+            <line x1="1102" y1="20" x2="1126" y2="20"/>
+          </g>
+          <text class="lf-lbl lf-lbl-hi" x="1090" y="24" text-anchor="end">0.23 s</text>
+
+          <text class="lf-lbl" x="72" y="244">Start</text>
+          <text class="lf-lbl" x="389" y="244" text-anchor="middle">15 m flags</text>
+          <text class="lf-lbl" x="811" y="244" text-anchor="middle">15 m flags</text>
+          <text class="lf-lbl lf-lbl-hi" x="1128" y="244" text-anchor="end">Touch pad</text>
+        </svg>
+        <figcaption>Every tick in lane 4 is one stroke, evenly spaced. At the pad there is 0.23 of a second in it. That margin is the whole game.</figcaption>
+      </figure>
 
       <div class="chapter chapter-twist" data-reveal>
         <p class="index">The twist</p>
@@ -150,16 +231,31 @@
         </dl>
       </div>
 
-      <div class="chapter" data-reveal>
-        <p class="index">The four strokes</p>
-        <h2>Four rhythms.<br>Four different races.</h2>
+      <div class="chapter chapter-strokes" data-reveal>
+        <p class="index">The strokes</p>
+        <h2>Three strokes.<br>Three different <em>clocks.</em></h2>
+        <p class="body">Each one is a separate rhythm with its own way of going wrong. Freestyle is the quickest of the three, breaststroke the slowest, butterfly between them — the same order they sit in in the water.</p>
       </div>
 
       <ol class="strokes" data-reveal>
-        <li><span class="stroke-no">I</span><h3>Freestyle</h3><p>Relentless. The tempo you can actually hold for the length.</p></li>
-        <li><span class="stroke-no">II</span><h3>Backstroke</h3><p>Blind to the wall. Count, trust the flags, commit to the turn.</p></li>
-        <li><span class="stroke-no">III</span><h3>Breaststroke</h3><p>Glide is free speed. Every extra pull costs you distance.</p></li>
-        <li><span class="stroke-no">IV</span><h3>Butterfly</h3><p>Two kicks, one breath, no mercy. The rhythm that punishes greed.</p></li>
+        <li>
+          <span class="stroke-no">01</span>
+          <h3>Freestyle</h3>
+          <p class="stroke-beat">Left, then right, evenly spaced. The tempo readout is the judge — not your thumbs.</p>
+          <p class="stroke-cost"><span class="k">Fails on</span>a beat you can’t hold for the length</p>
+        </li>
+        <li>
+          <span class="stroke-no">02</span>
+          <h3>Butterfly</h3>
+          <p class="stroke-beat">Both arms together, two kicks to a cycle: one with the pull, one between pulls.</p>
+          <p class="stroke-cost"><span class="k">Fails on</span>a single, un-synced arm — an illegal stroke</p>
+        </li>
+        <li>
+          <span class="stroke-no">03</span>
+          <h3>Breaststroke</h3>
+          <p class="stroke-beat">Pull, kick, glide — strictly in that order. The glide is where the free speed is.</p>
+          <p class="stroke-cost"><span class="k">Fails on</span>pulling again before the glide is spent</p>
+        </li>
       </ol>
 
       <div class="chapter" data-reveal>
@@ -179,11 +275,12 @@
       </div>
 
       <div class="plat-block" data-reveal>
+        <p class="index index-tight">Where you can play it</p>
         <ul class="plat-list">
           <li class="plat live">
             <span class="plat-state"><span class="dot"></span>Playable now</span>
             <h3><a href="https://theriskr.itch.io/rhythm-swimmin?utm_source=theriskr_site&amp;utm_medium=web&amp;utm_campaign=launch&amp;utm_content=platform_cta">Browser<span class="plat-arrow" aria-hidden="true">→</span></a></h3>
-            <p>The beta runs in your browser on itch.io. No download.</p>
+            <p>Runs in the browser on itch.io. No download.</p>
           </li>
           <li class="plat">
             <span class="plat-state">Planned</span>
